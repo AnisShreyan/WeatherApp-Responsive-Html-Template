@@ -3,7 +3,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: aqua;
     font-family: 'Poppins', sans-serif;
     background-image: url('./bg-clouds.png');
     background-size: cover;
@@ -21,27 +20,24 @@ body {
     grid-template-areas: "city city"
         "visual data"
     ;
-    /* background-color: rgba(245, 40, 145, 0.3); */
-    /* border-radius: 0.5rem; */
     color: white;
 }
 
 .city {
     grid-area: city;
-    /* background-color: blue; */
     padding: 0 2rem;
 }
 
 .visual {
     grid-area: visual;
-    /* background-color: blueviolet; */
-    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .data {
     grid-area: data;
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 0 2rem;
     border-radius: 0.7rem;
 }
 
@@ -64,8 +60,6 @@ ul {
 .Data-List {
     display: flex;
     height: 100%;
-    /* justify-content: center;
-    align-items: center; */
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
@@ -88,4 +82,36 @@ ul {
 
 .dataulsub {
     font-size: 1rem;
+}
+
+
+
+/* vsul */
+.watehr-icon {
+    height: 150px;
+    opacity: 0.8;
+}
+
+.temperat {
+    font-size: 7rem;
+    font-weight: 100;
+    line-height: 1rem;
+}
+
+.temperat-unit {
+    font-size: 3.4rem;
+}
+
+.temperat-unit sup {
+    font-size: 1rem;
+}
+
+.temperat-sub {
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.temperat-data {
+    padding-left: 2rem;
+    padding-top: 2rem;
 }
